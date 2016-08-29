@@ -1,0 +1,868 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="temp-js/jquery.js"></script>
+
+	
+	 
+    <!--Begin Content -->
+    <div>
+	<!--Show the Featured Image or Video -->
+		    <!--Show the Post Content -->
+		<link href="temp-css/temp-style.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="temp-js/calculation.js"></script><br>
+
+<div id="container_roi">
+  <!-- roi div elemen  height:2800px --><p></p>
+<div id="box_roi">
+<form name="form_roi" id="form_roi">
+<div id="calc_table">
+
+<table cellspacing="0" cellpadding="4">
+<tbody><tr>
+<th colspan="3" class="btop">
+<h1><center>Return on Rental Property Investment Calculator</center></h1>
+</th>
+</tr>
+<tr>
+<td colspan="3" valign="middle">
+<div class="instruction">
+<p>Complete the green boxes and this calculator will instantly display the ROI, cash flow, and IRR for this investment property. Adjust any of the required or optional inputs and the results will instantly update to reflect the changes.</p>
+</div>
+<div class="note_instruction">Note: Assumptions are hidden by default. Expand the assumptions line to change the assumptions.</div>
+</td>
+</tr>
+<tr>
+<td colspan="3" class="btop">
+<h2>Step 1 – Purchase Assumptions</h2>
+<div class="legenda"><span class="lgn_require"><img src="temp-img/lgn_require.png" width="20" height="20" alt="require">Required Inputs</span><span class="lgn_optional"><img src="temp-img/lgn_opt.png" width="20" height="20" alt="optional">Optional Inputs</span></div>
+</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Home Value</td>
+<td class="tdRT">$ <input name="b_home_value" type="text" class="require user_input" id="b_home_value" onChange="calculation(this)" style="color: black;"></td>
+<td align="left" valign="bottom">Price paid including capital improvements</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Initial investment</td>
+<td class="tdRT"><input name="b_int_investment_percent" type="text" class="require user_input" id="b_int_investment_percent" onChange="calculation(this)" style="color: black;"></td>
+<td valign="bottom"> % down = $ <input name="b_int_investment" type="text" class="calculated cleft" id="b_int_investment" readonly="readonly" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Debt</td>
+<td class="tdRT">$ <input name="b_debt" type="text" class="calculated" id="b_debt" readonly="readonly" style="color: black;"></td>
+<td align="left" valign="bottom"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Interest rate</td>
+<td class="tdRT"><input name="b_interest_rate" type="text" class="require user_input" id="b_interest_rate" onChange="calculation(this)" style="color: black;"></td>
+<td align="left" valign="bottom">% interest rate of mortgage</td>
+</tr>
+<tr>
+<td colspan="3" align="left" valign="bottom">
+<div id="assume_pa" style="background-image:url('plus-img.png');">Assumptions (optional inputs)</div>
+<div id="a_pa" style="display: none;">
+<table cellpadding="4" cellspacing="0" class="no_bdr">
+<tbody><tr>
+<td width="217">Loan Term</td>
+<td width="70"><input name="b_loan_term" type="text" class="optional user_input" id="b_loan_term" onChange="calculation(this)" value="360" style="color: rgb(145, 145, 145);"></td>
+<td>typical loan term (months, if no debt use term of 1)</td>
+</tr>
+<tr>
+<td>Buying costs</td>
+<td class="tdRT"><input name="b_buying_costs" type="text" class="optional user_input" id="b_buying_costs" onChange="calculation(this)" value="1.0" style="color: rgb(145, 145, 145);"></td>
+<td>% of sales price</td>
+</tr>
+</tbody></table></div>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<h2>Step 2 – Income Assumptions</h2>
+</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Monthly Rent</td>
+<td class="tdRT">$ <input name="r_monthly_rent" type="text" class="require user_input" id="r_monthly_rent" onChange="calculation(this)" style="color: black;"></td>
+<td align="left" valign="bottom">Gross monthly rental income <a href="http://www.rentometer.com/" target="_blank" style="font-size: .8em;">Find estimated rental rates here</a></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Cap Rate</td>
+<td class="tdRT"><input name="r_cap_rate" type="text" class="calculated" id="r_cap_rate" readonly="readonly" style="color: black;"></td>
+<td align="left" valign="bottom">%</td>
+</tr>
+<tr>
+<td colspan="3" align="left" valign="bottom">
+<div id="assume_ia" style="background-image: url("temp-img/plus-img.png");">Assumptions (optional inputs)</div>
+<div id="a_ia" style="display: none;">
+<table cellpadding="4" cellspacing="0" class="no_bdr">
+<tbody><tr>
+<td width="217">Vacancy rate</td>
+<td width="70" align="right"><input name="r_vacancy_rate" type="text" class="optional user_input" id="r_vacancy_rate" onChange="calculation(this)" value="8.0" style="color: rgb(145, 145, 145);"></td>
+<td>% of annual term rental</td>
+</tr>
+<tr>
+<td>Rent Increases</td>
+<td align="right"><input name="r_rent_increases" type="text" class="optional user_input" id="r_rent_increases" onChange="calculation(this)" value="4.0" style="color: rgb(145, 145, 145);"></td>
+<td>% of monthly rent</td>
+</tr>
+</tbody></table></div>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<h2>Step 3 – Operating Cost Assumptions</h2>
+</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Property Improvements</td>
+<td class="tdRT">$ <input name="o_property_improve" type="text" class="require user_input" id="o_property_improve" onChange="calculation(this)" style="color: black;"></td>
+<td align="left" valign="bottom">initial expenditures to get home ready for rental</td>
+</tr>
+<tr>
+<td colspan="3" align="left" valign="bottom">
+<div id="assume_oca" style="background-image: url("temp-img/plus-img.png");">Assumptions (optional inputs)</div>
+<div id="a_oca" style="display: none;">
+<table cellpadding="4" cellspacing="0" class="no_bdr">
+<tbody><tr>
+<td width="212" align="left" valign="bottom">Property mgt</td>
+<td width="75" align="right" valign="bottom"><input name="o_property_mgt" type="text" class="optional user_input" id="o_property_mgt" onChange="calculation(this)" value="10" style="color: rgb(145, 145, 145);"></td>
+<td align="left" valign="bottom">% of monthly rent</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Maintenance</td>
+<td align="right" valign="bottom"><input name="o_maintenance" type="text" class="optional user_input" id="o_maintenance" onChange="calculation(this)" value="1.0" style="color: rgb(145, 145, 145);"></td>
+<td align="left" valign="bottom">% of property value</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Insurance cost</td>
+<td align="right" valign="bottom"><input name="o_insurance_cost" type="text" class="optional user_input" id="o_insurance_cost" onChange="calculation(this)" value="0.5" style="color: rgb(145, 145, 145);"></td>
+<td align="left" valign="bottom">% of property value</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Move-in Move out costs</td>
+<td align="right" valign="bottom">$ <input name="o_inout_costs" type="text" class="optional user_input" id="o_inout_costs" onChange="calculation(this)" value="2000" style="color: rgb(145, 145, 145);"></td>
+<td align="left" valign="bottom">per change in vacancy <span class="small80">(tenant placement fees, make ready, etc)</span></td>
+</tr>
+</tbody></table></div>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<h2>Step 4 – Property Sales Assumptions</h2>
+</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Sales Price</td>
+<td class="tdRT">$ <input name="s_sales_price" type="text" class="calculated" id="s_sales_price" readonly="readonly" style="color: black;"></td>
+<td align="left" valign="bottom"></td>
+</tr>
+<tr>
+<td colspan="3" align="left" valign="bottom">
+<div id="assume_psa" style="background-image: url("temp-img/plus-img.png");">Assumptions (optional inputs)</div>
+<div id="a_psa" style="display: none;">
+<table cellpadding="4" cellspacing="0" class="no_bdr">
+<tbody><tr>
+<td width="217">Selling Commissions</td>
+<td width="70" align="right"><input name="s_selling_costs" type="text" class="optional user_input" id="s_selling_costs" onChange="calculation(this)" value="6.0" style="color: rgb(145, 145, 145);"></td>
+<td>% of sales price = $ <input name="val_sales_com" type="text" class="calculated" id="val_sales_com" readonly="readonly" style="color: black;"></td>
+</tr>
+<tr>
+<td>Annual Appreciation</td>
+<td align="right"><input name="s_annual_app" type="text" class="optional user_input" id="s_annual_app" onChange="calculation(this)" value="4.0" style="color: rgb(145, 145, 145);"></td>
+<td>% yearly rate of price appreciation</td>
+</tr>
+</tbody></table></div>
+</td>
+</tr>
+<tr>
+<td colspan="3" align="left" valign="bottom">
+<h2>Step 5 – Taxes, Inflation, &amp; Return Assumptions</h2>
+</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Land value</td>
+<td class="tdRT"><input name="t_land_percent" type="text" class="require user_input" id="t_land_percent" onChange="calculation(this)" style="color: black;"></td>
+<td valign="bottom"> % of purchase price = $ <input name="t_land_value" type="text" class="calculated" id="t_land_value" readonly="readonly" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Tax basis</td>
+<td class="tdRT">$ <input name="t_basis" type="text" class="calculated" id="t_basis" readonly="readonly" style="color: black;"></td>
+<td align="left" valign="bottom"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Property tax</td>
+<td class="tdRT"><input name="t_property_tax" type="text" class="require user_input" id="t_property_tax" onChange="calculation(this)" style="color: black;"></td>
+<td align="left" valign="bottom">% of property value <a href="http://www.tax-rates.org/taxtables/property-tax-by-state" target="_blank" style="font-size: .8em;">Find estimated property tax rates here</a></td>
+</tr>
+<tr>
+<td colspan="3" align="left" valign="bottom">
+<div id="assume_tir" style="background-image: url("temp-img/plus-img.png");">Assumptions (optional inputs)</div>
+<div id="a_tir" style="display: none;">
+<table cellpadding="4" cellspacing="0" class="no_bdr">
+<tbody><tr>
+<td width="200" align="left" valign="bottom">Tax Rate</td>
+<td width="70" align="right" valign="bottom"><input name="t_rate" type="text" class="optional user_input" id="t_rate" onChange="calculation(this)" value="25.0" style="color: rgb(145, 145, 145);"></td>
+<td align="left" valign="bottom">% ordinary income tax rate for investor/owner</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Capital Gains tax</td>
+<td align="right" valign="bottom"><input name="t_capital" type="text" class="optional user_input" id="t_capital" onChange="calculation(this)" value="15.0" style="color: rgb(145, 145, 145);"></td>
+<td align="left" valign="bottom">%</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Cost inflation rate</td>
+<td align="right" valign="bottom"><input name="t_cost_inf_rate" type="text" class="optional user_input" id="t_cost_inf_rate" onChange="calculation(this)" value="2.0" style="color: rgb(145, 145, 145);"></td>
+<td align="left" valign="bottom">% applied to maintenance,turnover &amp; insurance costs</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Investment Hurdle rate</td>
+<td align="right" valign="bottom"><input name="t_invest_hrate" type="text" class="optional user_input" id="t_invest_hrate" onChange="calculation(this)" value="8.0" style="color: rgb(145, 145, 145);"></td>
+<td align="left" valign="bottom">% annual rate, for comparison to other investments</td>
+</tr>
+</tbody></table></div>
+</td>
+</tr>
+<tr>
+<td colspan="3" align="left" valign="bottom">
+<h2>Expected Rate of Return &amp; Cash Flow Summary</h2>
+</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Return on Cash Invested</td>
+<td class="tdRT"><input name="croi" type="text" readonly="readonly" class="ibold" id="croi" style="color: rgb(0, 56, 118);"></td>
+<td align="left" valign="bottom">&nbsp;</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Projected 5 year <span style="text-decoration:underline">IRR</span>
+<div class="imgHover">
+<div class="hover"><strong>Internal Rate of Return (IRR):</strong> IRR calculations are commonly used to evaluate the desirability of investments or projects. The higher a project’s IRR, the more desirable it is to undertake the project. Assuming all projects require the same amount of up-front investment, the project with the highest IRR would be considered the best and undertaken first.<br>
+                  <a href="http://en.wikipedia.org/wiki/Internal_rate_of_return" target="_blank">http://en.wikipedia.org/wiki/Internal_rate_of_return</a></div>
+<p style="display:inline;"><img id="img_info" src="temp-img/btn_info.png" width="18" height="18" alt="info"></p>
+</div>
+</td>
+<td class="tdRT"><input name="irr" type="text" readonly="readonly" class="ibold" id="irr" style="color: rgb(0, 56, 118);"></td>
+<td align="left" valign="bottom">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3" align="left">
+<table cellpadding="0" cellspacing="0" class="no_bdr">
+<tbody><tr>
+<td align="left" valign="bottom">&nbsp;</td>
+<td align="right"><strong>Initial</strong></td>
+<td align="right"><strong>Year 1</strong></td>
+<td align="right"><strong>Year 2</strong></td>
+<td align="right"><strong>Year 3</strong></td>
+<td align="right"><strong>Year 4</strong></td>
+<td align="right"><strong>Year 5</strong></td>
+<td align="right"><strong>Net Total</strong></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Projected Cash Flow</td>
+<td align="right" valign="bottom"><input name="deal_cf" type="text" readonly="readonly" id="deal_cf" style="color: black;"></td>
+<td align="right" valign="bottom"><input name="deal_cf1" type="text" readonly="readonly" id="deal_cf1" style="color: black;"></td>
+<td align="right" valign="bottom"><input name="deal_cf2" type="text" readonly="readonly" id="deal_cf2" style="color: black;"></td>
+<td align="right" valign="bottom"><input name="deal_cf3" type="text" readonly="readonly" id="deal_cf3" style="color: black;"></td>
+<td align="right" valign="bottom"><input name="deal_cf4" type="text" readonly="readonly" id="deal_cf4" style="color: black;"></td>
+<td align="right" valign="bottom"><input name="deal_cf5" type="text" readonly="readonly" id="deal_cf5" style="color: black;"></td>
+<td align="right" valign="bottom"><input name="net_cashflow" type="text" class="ibold" id="net_cashflow" readonly="readonly" style="color: rgb(0, 56, 118);"></td>
+</tr>
+</tbody></table>
+</td>
+</tr>
+<tr>
+<td colspan="3" align="left" valign="bottom">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3" class="btn tdMD">
+<div id="show_invest"><span class="button">Hide Detailed Investment Performance </span></div>
+</td>
+</tr>
+</tbody></table></div>
+<div><img class="btn_print" src="temp-img/printericon.png" alt="print" onClick="printDiv();" align="right"></div>
+<p></p>
+<div id="results_box" style="display: block;">
+<div class="btop h_table" id="h_analysis">
+<h1><img id="img_sh" src="temp-img/btn_hide.png" width="20" height="16" alt="hide">Table 1 – Cash Flows &amp; ROI Details</h1>
+</div>
+<div id="table_analysis">
+<table id="fprojection" border="0" cellpadding="3" cellspacing="0" cols="11">
+<tbody><tr>
+<td height="25" align="left"><strong>Cash Flow Details</strong></td>
+<td height="25" align="right"><strong>Initial</strong></td>
+<td height="25" align="right"><strong>Year 1</strong></td>
+<td height="25" align="right"><strong>Year 2</strong></td>
+<td height="25" align="right"><strong>Year 3</strong></td>
+<td height="25" align="right"><strong>Year 4</strong></td>
+<td height="25" align="right"><strong>Year 5</strong></td>
+<td height="25" align="right"><strong>Total</strong></td>
+</tr>
+<tr>
+<td colspan="7" align="left">
+<hr></td>
+<td bgcolor="#E9E9E9">
+<hr></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent20">Purchase Investment</span></td>
+<td align="right" valign="bottom"><input name="deal_cf_1c" type="text" readonly="readonly" id="deal_cf_1c" style="color: black;"></td>
+<td align="right" valign="bottom">&nbsp;</td>
+<td align="right" valign="bottom">&nbsp;</td>
+<td align="right" valign="bottom">&nbsp;</td>
+<td align="right" valign="bottom">&nbsp;</td>
+<td align="right" valign="bottom">&nbsp;</td>
+<td align="right" valign="bottom" bgcolor="#E9E9E9"><input name="deal_cf_2c" type="text" class="ibold" id="deal_cf_2c" readonly="readonly" style="color: rgb(0, 56, 118);"></td>
+</tr>
+<tr>
+<td colspan="2" align="left" valign="bottom"><span class="indent20">Net Cash Flow</span> <span class="size80">(see Table 2)</span></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_annual_cf1" id="fp_annual_cf1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_annual_cf2" id="fp_annual_cf2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_annual_cf3" id="fp_annual_cf3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_annual_cf4" id="fp_annual_cf4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_annual_cf5" id="fp_annual_cf5" style="color: black;"></td>
+<td align="right" valign="bottom" bgcolor="#E9E9E9"><input class="ibold" name="fp_annual_cf_total" type="text" readonly="readonly" id="fp_annual_cf_total" style="color: rgb(0, 56, 118);"></td>
+</tr>
+<tr>
+<td colspan="2"><span class="indent20">Sales Price</span></td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right"><input name="fp_salesprice_2" type="text" id="fp_salesprice_2" readonly="readonly" style="color: black;"></td>
+<td align="right" bgcolor="#E9E9E9"><input name="fp_salesprice" type="text" class="ibold" id="fp_salesprice" readonly="readonly" style="color: rgb(0, 56, 118);"></td>
+</tr>
+<tr>
+<td colspan="2"><span class="indent20">Selling costs</span></td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right"><input name="fp_sellcost_2" type="text" id="fp_sellcost_2" readonly="readonly" style="color: black;"></td>
+<td align="right" bgcolor="#E9E9E9"><input name="fp_sellcost" type="text" class="ibold" id="fp_sellcost" readonly="readonly" style="color: rgb(0, 56, 118);"></td>
+</tr>
+<tr>
+<td colspan="2"><span class="indent20">Taxable Gain</span>
+<div class="imgHover">
+<div class="hover">See the following Sales Transaction Details for calculations.</div>
+<p style="display:inline;"><img id="img_info" src="./Investment Property Analyzer – Rental Property ROI Calculator _ RPR_files/btn_info.png" width="18" height="18" alt="info"></p>
+</div>
+</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right"><input type="text" readonly="readonly" name="fp_taxgain_2" id="fp_taxgain_2" style="color: black;"></td>
+<td align="right" bgcolor="#E9E9E9"><input class="ibold" type="text" readonly="readonly" name="fp_taxgain" id="fp_taxgain" style="color: rgb(0, 56, 118);"></td>
+</tr>
+<tr>
+<td colspan="2"><span class="indent20">Taxes</span></td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right"><input name="taxes2" type="text" id="taxes2" readonly="readonly" style="color: black;"></td>
+<td align="right" bgcolor="#E9E9E9"><input name="taxes" type="text" class="ibold" id="taxes" readonly="readonly" style="color: rgb(0, 56, 118);"></td>
+</tr>
+<tr>
+<td colspan="2"><span class="indent20">Note Payoff</span> <span class="size80">(see Table 4)</span></td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right"><input name="tax_payoff_2" type="text" id="tax_payoff_2" readonly="readonly" style="color: black;"></td>
+<td align="right" bgcolor="#E9E9E9"><input name="tax_payoff" type="text" class="ibold" id="tax_payoff" readonly="readonly" style="color: rgb(0, 56, 118);"></td>
+</tr>
+<tr>
+<td colspan="7">
+<hr></td>
+<td bgcolor="#E9E9E9">
+<hr></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Total Annual Cash Flow</td>
+<td align="right" valign="bottom"><span class="rno_bdr"><input name="deal_cf_3c" type="text" readonly="readonly" id="deal_cf_3c" style="color: black;"></span></td>
+<td align="right" valign="bottom"><span class="rno_bdr"><input name="deal_cf_1" type="text" readonly="readonly" id="deal_cf_1" style="color: black;"></span></td>
+<td align="right" valign="bottom"><span class="rno_bdr"><input name="deal_cf_2" type="text" readonly="readonly" id="deal_cf_2" style="color: black;"></span></td>
+<td align="right" valign="bottom"><span class="rno_bdr"><input name="deal_cf_3" type="text" readonly="readonly" id="deal_cf_3" style="color: black;"></span></td>
+<td align="right" valign="bottom"><span class="rno_bdr"><input name="deal_cf_4" type="text" readonly="readonly" id="deal_cf_4" style="color: black;"></span></td>
+<td align="right" valign="bottom"><span class="rno_bdr"><input name="deal_cf_5" type="text" readonly="readonly" id="deal_cf_5" style="color: black;"></span></td>
+<td align="right" valign="bottom" bgcolor="#E9E9E9"><span class="rno_bdr"><input name="net_cashflow_2" type="text" class="ibold" id="net_cashflow_2" readonly="readonly" style="color: rgb(0, 56, 118);"></span></td>
+</tr>
+<tr>
+<td colspan="7">
+<hr></td>
+<td bgcolor="#E9E9E9">
+<hr></td>
+</tr>
+<tr>
+<td height="35" colspan="2">&nbsp;</td>
+<td height="35" align="right" valign="bottom"><strong>Year 1</strong></td>
+<td height="35" align="right" valign="bottom"><strong>Year 2</strong></td>
+<td height="35" align="right" valign="bottom"><strong>Year 3</strong></td>
+<td height="35" align="right" valign="bottom"><strong>Year 4</strong></td>
+<td height="35" align="right" valign="bottom"><strong>Year 5</strong></td>
+<td height="35" align="right" valign="bottom"><strong>Total</strong></td>
+</tr>
+<tr>
+<td colspan="7">
+<hr></td>
+<td bgcolor="#E9E9E9">
+<hr></td>
+</tr>
+<tr>
+<td colspan="2"><strong>ROI Details</strong> –  Net cash flow</td>
+<td align="right"><input type="text" readonly="readonly" name="fp_roicf1" id="fp_roicf1" style="color: black;"></td>
+<td align="right"><input type="text" readonly="readonly" name="fp_roicf2" id="fp_roicf2" style="color: black;"></td>
+<td align="right"><input type="text" readonly="readonly" name="fp_roicf3" id="fp_roicf3" style="color: black;"></td>
+<td align="right"><input type="text" readonly="readonly" name="fp_roicf4" id="fp_roicf4" style="color: black;"></td>
+<td align="right"><input type="text" readonly="readonly" name="fp_roicf5" id="fp_roicf5" style="color: black;"></td>
+<td align="right" bgcolor="#E9E9E9"><input name="fp_roicf_total" type="text" class="ibold" id="fp_roicf_total" readonly="readonly" style="color: rgb(0, 56, 118);"></td>
+</tr>
+<tr>
+<td colspan="7">
+<hr></td>
+<td bgcolor="#E9E9E9">
+<hr></td>
+</tr>
+<tr>
+<td colspan="6"><strong>Present Value</strong> – Cash flows discounted by hurdle rate </td>
+<td align="right"><input name="present_value2" type="text" class="ibold" id="present_value2" readonly="readonly" style="color: rgb(0, 56, 118);"></td>
+<td align="right" bgcolor="#E9E9E9"><input name="present_value" type="text" class="ibold" id="present_value" readonly="readonly" style="color: rgb(0, 56, 118);"></td>
+</tr>
+<tr>
+<td colspan="7">
+<hr></td>
+<td bgcolor="#E9E9E9">
+<hr></td>
+</tr>
+<tr>
+<td colspan="6"><strong>Walk Away Price</strong> – Breakeven price between renting and selling</td>
+<td align="right"><input name="walkway_price2" type="text" class="ibold" id="walkway_price2" readonly="readonly" style="color: rgb(0, 56, 118);"></td>
+<td align="right" bgcolor="#E9E9E9"><input name="walkway_price" type="text" class="ibold" id="walkway_price" readonly="readonly" style="color: rgb(0, 56, 118);"></td>
+</tr>
+<tr>
+<td colspan="7">
+<hr></td>
+<td bgcolor="#E9E9E9">
+<hr></td>
+</tr>
+<tr>
+<td colspan="2"><strong>Sales Transaction Details</strong></td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right"><strong>Year 5</strong></td>
+<td align="right"><strong>Total</strong></td>
+</tr>
+<tr>
+<td colspan="7">
+<hr></td>
+<td align="right" bgcolor="#E9E9E9">
+<hr></td>
+</tr>
+<tr>
+<td colspan="2"><span class="indent20">Sales Price</span></td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right"><input name="fp_salesprice_c1" type="text" id="fp_salesprice_c1" readonly="readonly" style="color: black;"></td>
+<td align="right" bgcolor="#E9E9E9"><input name="fp_salesprice_c2" type="text" id="fp_salesprice_c2" readonly="readonly" style="color: black;"></td>
+</tr>
+<tr>
+<td colspan="2"><span class="indent20">Selling costs</span></td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="right"><input name="fp_sellcost_c1" type="text" id="fp_sellcost_c1" readonly="readonly" style="color: black;"></td>
+<td align="right" bgcolor="#E9E9E9"><input name="fp_sellcost_c2" type="text" id="fp_sellcost_c2" readonly="readonly" style="color: black;"></td>
+</tr>
+<tr>
+<td colspan="7">
+<hr></td>
+<td align="right" bgcolor="#E9E9E9">
+<hr></td>
+</tr>
+<tr>
+<td colspan="6"><span class="indent20">Cash Proceeds </span> <span class="small80">(before taxes and note repayment) </span></td>
+<td align="right">&nbsp;</td>
+<td align="right" bgcolor="#E9E9E9"><input name="fp_cpt_repayment" type="text" id="fp_cpt_repayment" readonly="readonly" style="color: black;"></td>
+</tr>
+<tr>
+<td colspan="6"><span class="padl30">Depreciated Basis</span></td>
+<td align="right"><input class="font_ul" name="fp_dbasic" type="text" id="fp_dbasic" readonly="readonly" style="color: black;"></td>
+<td align="right" bgcolor="#E9E9E9">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="6"><span class="padl30"> Taxable Gain</span></td>
+<td align="right"><input type="text" readonly="readonly" name="fp_taxgain_c1" id="fp_taxgain_c1" style="color: black;"></td>
+<td align="right" bgcolor="#E9E9E9">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="6"><span class="indent20"> Depreciation Recapture Tax </span>
+<div class="imgHover">
+<div class="hover_tax"><strong>Depreciation Recapture </strong>is <br>when real property is sold at a gain and depreciation had been claimed, the owner is required to pay a tax at ordinary rates to the extent of the depreciation on residential real estate.</div>
+<p style="display:inline;"><img id="img_info" src="temp-img/btn_info.png" width="18" height="18" alt="info"></p>
+</div>
+</td>
+<td align="right"><input name="tax_drecapture_c1" type="text" id="tax_drecapture_c1" readonly="readonly" style="color: black;"></td>
+<td align="right" bgcolor="#E9E9E9"><input name="tax_drecapture_c2" type="text" id="tax_drecapture_c2" readonly="readonly" style="color: black;"></td>
+</tr>
+<tr>
+<td colspan="6"><span class="indent20">Capital Gains Tax</span></td>
+<td align="right"><input name="tax_cgains_c1" type="text" id="tax_cgains_c1" readonly="readonly" style="color: black;"></td>
+<td align="right" bgcolor="#E9E9E9"><input name="tax_cgains_c2" type="text" id="tax_cgains_c2" readonly="readonly" style="color: black;"></td>
+</tr>
+<tr>
+<td colspan="6"><span class="indent20">Note Payoff</span> <span class="small80">(see Table 4) </span></td>
+<td align="right"><input name="tax_payoff_c1" type="text" id="tax_payoff_c1" readonly="readonly" style="color: black;"></td>
+<td align="right" bgcolor="#E9E9E9"><input name="tax_payoff_c2" type="text" id="tax_payoff_c2" readonly="readonly" style="color: black;"></td>
+</tr>
+<tr>
+<td colspan="7">
+<hr></td>
+<td align="right" bgcolor="#E9E9E9">
+<hr></td>
+</tr>
+<tr>
+<td colspan="6">Cash from Sale <span class="small80">(proceeds less taxes and less debt)</span></td>
+<td align="right"><input class="bg_grey" name="tax_cfsales2" type="text" readonly="readonly" id="tax_cfsales2" style="color: black;"></td>
+<td align="right" bgcolor="#E9E9E9"><input class="bg_grey" name="tax_cfsales" type="text" readonly="readonly" id="tax_cfsales" style="color: black;"></td>
+</tr>
+<tr>
+<td colspan="7">
+<hr></td>
+<td bgcolor="#E9E9E9">
+<hr></td>
+</tr>
+<tr>
+<td colspan="8" align="left" valign="bottom">&nbsp;</td>
+</tr>
+</tbody></table></div>
+<p></p>
+<div class="btop h_table" id="h_invest">
+<h1><img id="img_sh" src="temp-img/btn_show.png" width="20" height="16" alt="hide">Table 2 – Yearly Financial Projections Details</h1>
+</div>
+<div id="table_invest" style="display: none;">
+<table>
+<tbody><tr>
+<td height="25" align="left"><strong>Financial Projections</strong></td>
+<td height="25" align="right"><strong>Year 1</strong></td>
+<td height="25" align="right"><strong>Year 2</strong></td>
+<td height="25" align="right"><strong>Year 3</strong></td>
+<td height="25" align="right"><strong>Year 4</strong></td>
+<td height="25" align="right"><strong>Year 5</strong></td>
+<td height="25" align="right"><strong>Total</strong></td>
+</tr>
+<tr>
+<td colspan="7" align="left" valign="bottom">
+<hr></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent20">Rent Income</span></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_ri1" id="fp_ri1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_ri2" id="fp_ri2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_ri3" id="fp_ri3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_ri4" id="fp_ri4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_ri5" id="fp_ri5" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_ri_total" id="fp_ri_total" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">&nbsp;</td>
+<td align="left" valign="bottom"></td>
+<td align="left" valign="bottom"></td>
+<td align="left" valign="bottom"></td>
+<td align="left" valign="bottom"></td>
+<td align="left" valign="bottom"></td>
+<td align="left" valign="bottom"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent20">Rental Expenses</span></td>
+<td align="right" valign="bottom">&nbsp;</td>
+<td align="right" valign="bottom">&nbsp;</td>
+<td align="right" valign="bottom">&nbsp;</td>
+<td align="right" valign="bottom">&nbsp;</td>
+<td align="right" valign="bottom">&nbsp;</td>
+<td align="right" valign="bottom">&nbsp;</td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent40">Interest</span></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_interest1" id="fp_interest1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_interest2" id="fp_interest2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_interest3" id="fp_interest3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_interest4" id="fp_interest4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_interest5" id="fp_interest5" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_interest_total" id="fp_interest_total" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent40">Taxes</span></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_tax1" id="fp_tax1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_tax2" id="fp_tax2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_tax3" id="fp_tax3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_tax4" id="fp_tax4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_tax5" id="fp_tax5" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_tax_total" id="fp_tax_total" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent40">Insurance</span></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_insurance1" id="fp_insurance1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_insurance2" id="fp_insurance2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_insurance3" id="fp_insurance3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_insurance4" id="fp_insurance4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_insurance5" id="fp_insurance5" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_insurance_total" id="fp_insurance_total" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent40">Tenant Turnover costs</span>
+<div class="imgHover">
+<div class="hover_tax"><strong>Tenant Turnover Costs </strong>reflects estimated costs when a home is vacant and is re-rented. It reflects make-ready costs, leasing commissions, and advertising (if self-managed). Lower vacancy rates and longer term leases reduce these expenses. The U.S. average is 8%.</div>
+<p style="display:inline;"><img id="img_info" src="temp-img/btn_info.png" width="18" height="18" alt="info"></p>
+</div>
+</td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_ttc1" id="fp_ttc1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_ttc2" id="fp_ttc2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_ttc3" id="fp_ttc3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_ttc4" id="fp_ttc4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_ttc5" id="fp_ttc5" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_ttc_total" id="fp_ttc_total" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent40">Maintenance</span></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_maintenance1" id="fp_maintenance1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_maintenance2" id="fp_maintenance2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_maintenance3" id="fp_maintenance3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_maintenance4" id="fp_maintenance4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_maintenance5" id="fp_maintenance5" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_maintenance_total" id="fp_maintenance_total" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent40">Buying cost</span></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_bcost" id="fp_bcost" style="color: black;"></td>
+<td align="left" valign="bottom"></td>
+<td align="left" valign="bottom"></td>
+<td align="left" valign="bottom"></td>
+<td align="left" valign="bottom"></td>
+<td align="left" valign="bottom"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent40">Professional Management</span></td>
+<td align="right" valign="bottom"><input class="font_ul" type="text" readonly="readonly" name="fp_pm1" id="fp_pm1" style="color: black;"></td>
+<td align="right" valign="bottom"><input class="font_ul" type="text" readonly="readonly" name="fp_pm2" id="fp_pm2" style="color: black;"></td>
+<td align="right" valign="bottom"><input class="font_ul" type="text" readonly="readonly" name="fp_pm3" id="fp_pm3" style="color: black;"></td>
+<td align="right" valign="bottom"><input class="font_ul" type="text" readonly="readonly" name="fp_pm4" id="fp_pm4" style="color: black;"></td>
+<td align="right" valign="bottom"><input class="font_ul" type="text" readonly="readonly" name="fp_pm5" id="fp_pm5" style="color: black;"></td>
+<td align="right" valign="bottom"><input class="font_ul" type="text" readonly="readonly" name="fp_pm_total" id="fp_pm_total" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent20">Total Rental Expense</span></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_totale1" id="fp_totale1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_totale2" id="fp_totale2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_totale3" id="fp_totale3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_totale4" id="fp_totale4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_totale5" id="fp_totale5" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_totale_total" id="fp_totale_total" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent20">Net Income</span><span class="superscript">1</span></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_income1" id="fp_income1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_income2" id="fp_income2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_income3" id="fp_income3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_income4" id="fp_income4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_income5" id="fp_income5" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_income_total" id="fp_income_total" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent40">Depreciation</span></td>
+<td align="right" valign="bottom"><input class="font_ul" type="text" readonly="readonly" name="fp_depreciation1" id="fp_depreciation1" style="color: black;"></td>
+<td align="right" valign="bottom"><input class="font_ul" type="text" readonly="readonly" name="fp_depreciation2" id="fp_depreciation2" style="color: black;"></td>
+<td align="right" valign="bottom"><input class="font_ul" type="text" readonly="readonly" name="fp_depreciation3" id="fp_depreciation3" style="color: black;"></td>
+<td align="right" valign="bottom"><input class="font_ul" type="text" readonly="readonly" name="fp_depreciation4" id="fp_depreciation4" style="color: black;"></td>
+<td align="right" valign="bottom"><input class="font_ul" type="text" readonly="readonly" name="fp_depreciation5" id="fp_depreciation5" style="color: black;"></td>
+<td align="right" valign="bottom"><input class="font_ul" type="text" readonly="readonly" name="fp_depreciation_total" id="fp_depreciation_total" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent40">Taxable income</span></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_taxincome1" id="fp_taxincome1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_taxincome2" id="fp_taxincome2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_taxincome3" id="fp_taxincome3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_taxincome4" id="fp_taxincome4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_taxincome5" id="fp_taxincome5" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_taxincome_total" id="fp_taxincome_total" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent20">Tax (benefit) cost</span><span class="superscript">2</span></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_taxb1" id="fp_taxb1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_taxb2" id="fp_taxb2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_taxb3" id="fp_taxb3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_taxb4" id="fp_taxb4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_taxb5" id="fp_taxb5" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_taxb_total" id="fp_taxb_total" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent20">Principal Reduction</span><span class="superscript">3</span></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_preduction1" id="fp_preduction1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_preduction2" id="fp_preduction2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_preduction3" id="fp_preduction3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_preduction4" id="fp_preduction4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_preduction5" id="fp_preduction5" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="fp_preduction_total" id="fp_preduction_total" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent20">Capital expenditures</span><span class="superscript">4</span></td>
+<td align="right" valign="bottom"><input class="font_ul" type="text" readonly="readonly" name="fp_ce" id="fp_ce" style="color: black;"></td>
+<td align="left" valign="bottom"></td>
+<td align="left" valign="bottom"></td>
+<td align="left" valign="bottom"></td>
+<td align="left" valign="bottom"></td>
+<td align="left" valign="bottom"></td>
+</tr>
+<tr>
+<td colspan="7" align="left" valign="bottom">
+<hr></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><span class="indent20">Net Cash Flow </span><span class="size80">(1-2-3-4)</span></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="net_cf1" id="net_cf1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="net_cf2" id="net_cf2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="net_cf3" id="net_cf3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="net_cf4" id="net_cf4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="net_cf5" id="net_cf5" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="net_cf6" id="net_cf6" style="color: black;"></td>
+</tr>
+<tr>
+<td colspan="7" align="left" valign="bottom">
+<hr></td>
+</tr>
+</tbody></table></div>
+<p></p>
+<div class="btop h_table" id="h_roi">
+<h1><img id="img_sh" src="./Investment Property Analyzer – Rental Property ROI Calculator _ RPR_files/btn_show.png" width="20" height="16" alt="hide">Table 3 – ROI Table Details</h1>
+</div>
+<div id="tbl_roi" style="display: none;">
+<table>
+<tbody><tr>
+<td height="25" align="left" valign="middle">&nbsp;</td>
+<td align="right" valign="bottom"><strong>Year 1</strong></td>
+<td align="right" valign="bottom"><strong>Year 2</strong></td>
+<td align="right" valign="bottom"><strong>Year 3</strong></td>
+<td align="right" valign="bottom"><strong>Year 4</strong></td>
+<td align="right" valign="bottom"><strong>Year 5</strong></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Initial Investment</td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_investment1" id="troi_investment1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_investment2" id="troi_investment2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_investment3" id="troi_investment3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_investment4" id="troi_investment4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_investment5" id="troi_investment5" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Yearly Price Appreciation</td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_yprice1" id="troi_yprice1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_yprice2" id="troi_yprice2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_yprice3" id="troi_yprice3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_yprice4" id="troi_yprice4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_yprice5" id="troi_yprice5" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Appreciation Net of Taxes</td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cgtax1" id="troi_cgtax1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cgtax2" id="troi_cgtax2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cgtax3" id="troi_cgtax3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cgtax4" id="troi_cgtax4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cgtax5" id="troi_cgtax5" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Net Cash Flow</td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cflow1" id="troi_cflow1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cflow2" id="troi_cflow2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cflow3" id="troi_cflow3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cflow4" id="troi_cflow4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cflow5" id="troi_cflow5" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Net Worth Increase</td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cworth1" id="troi_cworth1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cworth2" id="troi_cworth2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cworth3" id="troi_cworth3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cworth4" id="troi_cworth4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_cworth5" id="troi_cworth5" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">ROI <span class="size80">(net worth/initial investment)</span></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_roi1" id="troi_roi1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_roi2" id="troi_roi2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_roi3" id="troi_roi3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_roi4" id="troi_roi4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="troi_roi5" id="troi_roi5" style="color: black;"></td>
+</tr>
+</tbody></table></div>
+<p></p>
+<div class="btop h_table" id="h_yend">
+<h1><img id="img_sh" src="./Investment Property Analyzer – Rental Property ROI Calculator _ RPR_files/btn_show.png" width="20" height="16" alt="hide">Table 4 – Year Ending Balances Details</h1>
+</div>
+<div id="table_yend" style="display: none;">
+<table>
+<tbody><tr>
+<td colspan="2" align="left" valign="bottom"></td>
+<td height="30" colspan="5" align="center" valign="middle"><strong> Ending Year Balances </strong></td>
+</tr>
+<tr>
+<td align="left" valign="bottom"><u>Debt Calculations</u></td>
+<td align="right" valign="bottom"><strong> Beg. Balance </strong></td>
+<td align="right" valign="bottom"><strong>Year 1</strong></td>
+<td align="right" valign="bottom"><strong>Year 2</strong></td>
+<td align="right" valign="bottom"><strong>Year 3</strong></td>
+<td align="right" valign="bottom"><strong>Year 4</strong></td>
+<td align="right" valign="bottom"><strong>Year 5</strong></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Loan Balance</td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_loanb" id="dc_loanb" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_loanb1" id="dc_loanb1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_loanb2" id="dc_loanb2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_loanb3" id="dc_loanb3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_loanb4" id="dc_loanb4" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_loanb5" id="dc_loanb5" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Interest</td>
+<td align="right" valign="bottom">&nbsp;</td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_interest" id="dc_interest" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_interest1" id="dc_interest1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_interest2" id="dc_interest2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_interest3" id="dc_interest3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_interest4" id="dc_interest4" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Principal Reduction</td>
+<td align="right" valign="bottom">&nbsp;</td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_preduction" id="dc_preduction" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_preduction1" id="dc_preduction1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_preduction2" id="dc_preduction2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_preduction3" id="dc_preduction3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_preduction4" id="dc_preduction4" style="color: black;"></td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Mortgage Payments</td>
+<td align="right" valign="bottom">&nbsp;</td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_mpayment" id="dc_mpayment" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_mpayment1" id="dc_mpayment1" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_mpayment2" id="dc_mpayment2" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_mpayment3" id="dc_mpayment3" style="color: black;"></td>
+<td align="right" valign="bottom"><input type="text" readonly="readonly" name="dc_mpayment4" id="dc_mpayment4" style="color: black;"></td>
+</tr>
+</tbody></table></div>
+
+<p></p>
+<div id="footer_roi"><img class="btn_print" src="temp-img/printericon.png" alt="print" onClick="printDiv();" align="right"></div>
+<p></p></div>
+<p></p></form>
+<p></p></div>
+</div>
+<p></p>
+		      		</div>
+   
+
+

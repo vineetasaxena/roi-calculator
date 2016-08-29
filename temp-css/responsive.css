@@ -1,0 +1,174 @@
+/*-------------------------------------------------------------------------------------------*/
+/*- MEDIA QUERIES ---------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------*/
+/* layouts smaller than 600px, iPhone and mobiles */
+@media only screen and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
+	html {-webkit-text-size-adjust: none;}
+
+	/*----------------------------*/
+	/*- LAYOUT -------------------*/
+	#header-container{overflow: hidden;}
+	#header-banner{border-top: 5px solid;}
+	#navigation-container{float: none; margin: 0px; padding: 0px; position: static;}
+	#content-container{margin: 0px auto 20px;}
+	#left-column{float: none; width: 100%; margin-bottom: 20px;}
+	#right-column{float: none; width: 100%;}
+	
+	/*----------------------------*/
+	/*- LOGO ---------------------*/
+	.logo{float: none; text-align: center;}
+	.logo img{display: block; margin: 0px 0px 10px;}
+	
+	/*----------------------------*/
+	/*- MENU ---------------------*/
+	#menu-drop-button{display: block; float: right; height: 30px; width: 30px;  background: #000 url(images/layout/drop-down.png) center no-repeat;}
+	ul#nav{display: none; clear: both; margin: 0px 0px 20px; background: #333; border: none;}
+	ul#nav li{float: none; padding: 1px; margin: 0px; border: none; border-bottom: 1px dotted #555;}
+	ul#nav li a{padding: 5px 8px; margin: 0px; border-radius: 3px; border: none; color: #fff;}
+	ul#nav li a:hover{padding: 5px 8px; margin: 0px; border: none;}
+	
+	/*----------------------------*/
+	/*- SUB MENU -----------------*/
+	ul#nav ul.sub-menu, ul#nav .children{padding: 0px; margin: 0px 0px -5px; position: relative; top: auto; left: auto; background: rgba(0, 0, 0, 0.8) !important; border-radius: 0px; border: none !important; box-shadow: none !important;}
+	ul#nav ul.sub-menu ul, ul#nav .children ul{display: block !important; top: auto; left: auto;}
+	ul#nav ul.sub-menu li, ul#nav .children li{clear: both; width: auto; padding: 0px; margin: 0px; border: none !important;}
+	ul#nav ul.sub-menu li:last-child, ul#nav .children li:last-child{border-bottom: none;}
+	ul#nav ul.sub-menu li a, ul#nav .children li a{display: block; padding: 5px 8px; margin: 0px;}
+	
+	
+	/*-------------------------------------*/
+	/*- HOME PAGE WIDGETS -----------------*/
+	/*-------------------------------------*/
+	
+	
+		/*----------------------------*/
+		/*- SLIDER -------------------*/
+					
+			/*---------------------*/
+			/*- SLIDER IMAGES -----*/
+			.gallery-container{float: none; width: 100%; height: auto; margin-bottom: 20px; position: relative;}
+			.gallery-container li{position: static; top: 0px; left: 0px; z-index: 1px;}
+			.gallery-image{display: block; overflow: hidden;}
+			.gallery-image img{display: block; margin: auto; max-width: 100%;}
+			.gallery-container a {display: block; width: auto; overflow: hidden;}
+			.gallery-container a img{position: relative; margin: auto;}
+			
+			/*---------------------*/
+			/*- SLIDER BUTTONS ----*/
+			.slider .next, .slider .previous{top: 120px;}
+			.slider .next{right: 0px; left: auto;}
+			
+		
+			/*---------------------*/
+			/*- SLIDER COPY -------*/
+			.slider .copy{float: none; width: 100%;}
+	
+	
+		/*----------------------------*/
+		/*- THREE COLUMN -------------*/
+		.three-column li{float: none; width: 100%; margin: 0 0 10px; border-bottom: 1px dotted #ccc;}
+		.three-column .post-image{float: left; width: 33.333333%; margin: 0px 6.666667% 0px 0px;}
+		.three-column p{margin-left: 39.999%;}
+		
+		
+		/*----------------------------*/
+		/*- TWO COLUMN ---------------*/
+		.two-column li.column{float: none; width: 100%; margin: 0 0 20px;}
+		.two-column li li{clear: both; padding: 10px 0px; margin: 0px; border-bottom: 1px dotted #ddd;}
+			
+		
+		/*----------------------------*/
+		/*- ONE COLUMN ---------------*/
+		.one-column{clear: both; margin-bottom: 20px;}
+		.one-column li{padding: 10px 0px; margin: 0px; border-bottom: 1px dotted #ddd; overflow: hidden;}
+		.one-column li:first-child{padding-top: 0px;}
+		.one-column li:last-child{border-bottom: none;}
+		.one-column .post-image{width: 33.333333%; margin: 0px 6.666667% 0px 0px;}
+		.one-column p{margin-left: 39.999%;}
+		
+		
+	/*-------------------------------------*/
+	/*- BLOG LIST AND SINGLE --------------*/
+	/*-------------------------------------*/
+		
+		/*----------------------------*/
+		/*- POST LIST ----------------*/
+		.blog-main-post-container .post-image{float: none; width: 100%; margin: 0px 0 20px 0px;}
+		.blog-main-post-container .post-title{font-size: 20px;}
+		
+		
+		/*-----------------------------*/
+		/*- NEXT - PREV POST NAV ------*/
+		.next-prev-post-nav{display: none;}		
+		
+		/*-----------------------------*/
+		/*- POST PAGE IMAGE -----------*/
+		.post-image.in-post{float: none; margin: 0px 0px 20px 0px; border: none;}
+		.post-image.in-post img{border: none;}
+		.single .post-image{margin: 0px 0px 20px 0px; width: 100%;}
+		
+		/*------------------------------*/
+		/*- POST PAGE META -------------*/
+		ul.social{float: none; width: 100%; margin-bottom: 10px;}
+		ul.tags{float: none; width: 100%;}
+	
+	
+		/*----------------------------*/
+		/*- COMMENTS- ----------------*/
+		.comment h5.date{position: static;}
+		
+		
+	/*-------------------------------------*/
+	/*- GALLERY PAGE ----------------------*/
+	/*-------------------------------------*/
+	
+		/*---------------------*/
+		/*- GALLERY PAGES -----*/
+		ul.gallery_list .gallery_description{width: auto; height: auto;}
+		ul.gallery_list:nth-of-type(2){margin-right: 0px;}
+		ul.gallery_list .gallery_image{width: 50%; height: auto; margin: 0px;}
+		ul.gallery_list .gallery_image a{width: 100%; height: auto; padding: 1px 1px 0px 0px;}
+		ul.gallery_list .gallery_image img{position: relative;}
+		
+	
+	/*----------------------------*/
+	/*- SEARCH WIDGET ------------*/
+	.search-form input[type=text]{float: left; width: 56%; padding: 5px 4%; margin: 0px 0 5px 0; border-radius: 100px;}
+	.search-form input[type=submit]{float: right; width: 32%; padding: 5px 0; border-width: 2px; text-align: center;}
+
+	/*----------------------------*/
+	/*- FOOTER AREA --------------*/
+	#footer ul li.column{float: none; width: 100%; margin: 0px 0px 30px 0px;}
+	#footer ul li.column:last-child{margin-bottom: 0px;}
+	
+	.footer-text .copyright{float: none; margin: 0px 0px 20px;}
+	.footer-text .obox-credit{float: none; margin: 0px;}
+}
+
+
+/*---------------*/
+/* iPad PORTRAIT */
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+
+/*----------------------------*/
+/*- SLIDER -------------------*/
+			
+	/*---------------------*/
+	/*- SLIDER IMAGES -----*/
+	.gallery-container li{position: static; top: 0px; left: 0px; z-index: 1px;}
+	.gallery-image{display: block; overflow: hidden; height: auto;}
+	.gallery-image img{display: block; margin: auto; max-width: 100%;}
+	.gallery-container a {display: block; width: auto; overflow: hidden;}
+	.gallery-container a img{position: relative; margin: auto;}
+		
+		
+/*---------------------*/
+/*- GALLERY PAGES -----*/
+ul.gallery_list:nth-of-type(2){margin-right: 0px;}
+
+		
+}
+
+@media only screen and (min-width: 1441px) {}

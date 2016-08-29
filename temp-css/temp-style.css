@@ -1,0 +1,294 @@
+@charset "utf-8";
+/* CSS Document */
+
+tr, td {
+    	padding-bottom: 3px;
+    	padding-left: 0px;
+    	padding-right: 8px;
+   	padding-top: 3px;
+    	border:0px;
+	font-weight: normal; 
+	vertical-align: bottom;   
+}
+.tdRT {
+	text-align: right;
+	vertical-align: text-bottom;
+}
+.tdMD {
+	text-align: center;
+}
+div#container_roi {
+	
+	display:block;
+	margin:10px auto;
+	font-family:Arial, Verdana, Sans-serif;
+	font-size:14px;
+}
+div#footer_roi {
+	position:relative;
+	bottom:10px;
+	padding:10px;
+}
+div#box_roi {
+	display:block;
+}
+div#container_roi table {
+	width:100%;
+	border:#E3E3E3 solid 1px:
+	border-radius:8px;
+	background-color:#F6F6F6;
+	padding-bottom:10px;
+}
+div#container_roi div#results_box table {
+	border:#E3E3E3 solid 0px;
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+}
+div#container_roi strong {
+	color:#003876;
+}
+div#container_roi h1 {
+	font-size:16px;
+	line-height:25px;
+	margin:0;
+	padding:0;
+	color:#FFF;
+}
+div#container_roi h2 {
+	font-size:16px;
+	margin:0;
+	padding:0;
+	margin-top:15px;
+	border-bottom:#CCC dotted 1px;
+	color:#003876;
+}
+div#container_roi hr {
+	margin:0;
+	padding:0;
+	line-height:1px;
+	border:none;
+	border-bottom:#CCC dotted 1px;
+}
+div#container_roi th.btop, div#container_roi div.btop {
+	background:#226091;
+	border:#1C4F7D solid 0px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	border-width: 0px 0px 1px 0px;
+	vertical-align: text-bottom;
+	background-image: linear-gradient(bottom, rgb(29,82,128) 14%, rgb(44,122,178) 66%);
+	background-image: -o-linear-gradient(bottom, rgb(29,82,128) 14%, rgb(44,122,178) 66%);
+	background-image: -moz-linear-gradient(bottom, rgb(29,82,128) 14%, rgb(44,122,178) 66%);
+	background-image: -webkit-linear-gradient(bottom, rgb(29,82,128) 14%, rgb(44,122,178) 66%);
+	background-image: -ms-linear-gradient(bottom, rgb(29,82,128) 14%, rgb(44,122,178) 66%);
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.14, rgb(29,82,128)), color-stop(0.66, rgb(44,122,178)) );
+}
+div#container_roi table#fprojection th {
+	text-align:center;
+	padding-top:10px;
+	color:#003876;
+}
+div#container_roi tr td:last-child {
+	padding-right:10px;
+}
+div#container_roi tr td:first-child, th {
+	padding-left:10px;
+}
+div#container_roi img.btn_print {
+	cursor:hand;
+	cursor: pointer;
+}
+div#box_roi input {
+	width:62px;
+	text-align:right;
+	border-radius:3px;
+	border:none;
+	background-color:transparent;
+	padding:2px;
+}
+div#box_roi input.ibold {
+	font-weight:bold;
+	color:#003876;
+}
+div#box_roi input.require {
+	background-color:#DBEABF;
+	border:#8EB255 solid 1px;
+}
+div#box_roi span.small80 {
+	font-size:90%;
+}
+div#box_roi input.optional {
+	background-color:#EBEBEB;
+}
+div#box_roi input.calculated {
+	background-color:#F6F6F6;
+	border:none;
+}
+div#box_roi input.cleft {
+	text-align:right;
+}
+div#box_roi div#return_analysis input {
+	width:65px;
+}
+div#box_roi table#fprojection input, table#table_roi input {
+	padding:2px;
+}
+div#box_roi input.calculated {
+	color:#000;
+	border-radius:0;
+	border-bottom:#BFBFBF dashed 1px;
+}
+div#box_roi span.button {
+	background:#226091;
+	border:#1C4F7D solid 1px;
+	border-radius:8px;
+	border-radius:8px;
+	background-image: linear-gradient(bottom, rgb(29,82,128) 14%, rgb(44,122,178) 66%);
+	background-image: -o-linear-gradient(bottom, rgb(29,82,128) 14%, rgb(44,122,178) 66%);
+	background-image: -moz-linear-gradient(bottom, rgb(29,82,128) 14%, rgb(44,122,178) 66%);
+	background-image: -webkit-linear-gradient(bottom, rgb(29,82,128) 14%, rgb(44,122,178) 66%);
+	background-image: -ms-linear-gradient(bottom, rgb(29,82,128) 14%, rgb(44,122,178) 66%);
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.14, rgb(29,82,128)), color-stop(0.66, rgb(44,122,178)) );
+	color:#FFF;
+	cursor:pointer;
+	padding:10px;
+}
+div#box_roi td.btn {
+	padding:20px;
+}
+div#box_roi div.h_table h1 {
+	padding:2px 10px;
+}
+div#box_roi .bdr_right {
+	border-right:#CCC dotted 1px;
+}
+div#box_roi td span.padl30 {
+	padding-left:40px;
+	font-style:italic;
+}
+div#box_roi td.padl30 span.shead {
+	padding-left:30px;
+	display:block;
+	
+	font-weight:bold;
+}
+div#box_roi div.instruction {
+	font-size:90%;
+	font-style:italic;
+	margin:10px 0;
+}
+div#box_roi div.instruction p {
+	margin:2px 0;
+}
+div#box_roi div.note_instruction {
+	font-size:80%;
+	font-style:italic;
+	margin:10px 0;
+}
+div#box_roi div.legenda {
+	float:right;
+	margin-top:-25px;
+}
+div#box_roi div.legenda span {
+	font-size:12px;
+	font-weight:normal;
+	font-style:italic;
+	color:#000;
+	margin-left:20px;
+	margin-right:10px;
+}
+div#box_roi div.legenda span img {
+	margin-right:5px;
+}
+div#box_roi h1 img {
+	margin-right:15px;
+}
+div#h_analysis, div#h_invest, div#h_roi, div#h_yend, div#assume_pa, div#assume_ia, div#assume_oca, div#assume_psa, div#assume_tir, img#img_info {
+	cursor:pointer;
+}
+div#assume_pa, div#assume_ia, div#assume_oca, div#assume_psa, div#assume_tir {
+	color:#00ccff;
+	background-position:left center;
+	background-repeat:no-repeat;
+	padding-left:22px;
+}
+div#container_roi table table tr td:first-child, th {
+	padding-left:0px;
+}
+div#calc_table a {
+	color:#069;
+	margin-left:15px;
+}
+.imgHover {
+	display:inline;
+}
+.imgHover .hover {
+	display: none;
+	position: absolute;
+	margin-left:160px;
+	margin-top:-20px;
+	z-index: 2;
+}
+div.hover {
+	width:350px;
+	background-color:#FFC;
+	font-size:12px;
+	line-height:18px;
+	padding:3px;
+	border:#333 dashed 1px;
+}
+.imgHover .hover_tax {
+	display: none;
+	position: absolute;
+	margin-left:220px;
+	margin-top:-20px;
+	z-index: 2;
+}
+div.hover_tax {
+	width:350px;
+	background-color:#FFC;
+	font-size:12px;
+	line-height:18px;
+	padding:3px;
+	border:#333 dashed 1px;
+}
+div#box_roi table.no_bdr {
+	border:#E3E3E3 solid 0px;
+	color:#fffff;
+	margin-left:20px;
+	width:700px;
+}
+div#box_roi input.optional {
+	background-color:#ccffff;
+	color:#919191;
+	border: 1px #0099ff solid;
+}
+.indent20 {
+	margin-left:20px;
+}
+.indent40 {
+	margin-left:40px;
+}
+.size80 {
+	font-size:80%;
+}
+.font_ul {
+	text-decoration:underline;
+}
+div#container_roi hr.underline {
+	margin:0;
+	padding:0;
+	line-height:1px;
+	border:none;
+	border-bottom:#000 solid 1px;
+	margin-left:25px;
+}
+.superscript {
+	font-size:xx-small;
+	vertical-align:top;
+}
+
+div#container_roi div.disclaimer h2 {
+	text-align:center;
+	border:none;
+}

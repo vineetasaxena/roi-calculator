@@ -1,0 +1,820 @@
+.apmout.gPT {
+    background-image: url("http://www.allpropertymanagement.com/images/rentbits-search_widget_bg.gif");
+    border: 1px solid #B2C0C8;
+    height: 75px;
+    width: 756px;
+	margin: -10px 0 35px 0;
+}
+.apmapi.apmsbnormal {
+    position: relative;
+}
+.apmapi.apmsbnormalpt, .apmapi.apmsbnormalzc {
+    position: absolute;
+}
+.apmapi.apmsbnormalpt {
+    margin-left: 35px;
+    width: 400px;
+}
+.apmapi.apmsbnormalzc {
+    left: 470px;
+    width: 100px;
+}
+.apmapi.apmsbnormalpt label, .apmapi.apmsbnormalzc label {
+    color: #666666;
+    display: block;
+    font: bold 15px arial,helvetica,sans-serif;
+    margin: 14px 0 4px;
+}
+.apmout.gPT select.apmapi.data {
+    border: 1px solid #999999;
+    font-size: 14px;
+    width: 400px;
+}
+.apmapi.data.apmapirentzip {
+    border: 1px solid #999999;
+    display: block;
+    font-size: 12px;
+    padding: 2px 0 1px;
+    width: 100px;
+}
+.apmapi.apmsbnormalbtn {
+    float: right;
+    padding: 24px 35px 0 0;
+}
+.apmapi.apmsfbutton {
+    background-image: url("http://www.allpropertymanagement.com/images/rentbits-button.gif");
+    display: block;
+    height: 33px;
+    position: relative;
+    text-indent: -9999px;
+    width: 116px;
+}
+.apmapi.apmsfbutton:hover {
+    background-image: url("http://www.allpropertymanagement.com/images/rentbits-button-on.gif");
+}
+.apmapi.loadAPI {
+    background: none repeat scroll 0 0 #FFFFFF;
+    line-height: 1;
+}
+.apmapi.loadAPI textarea {
+    margin: 0;
+}
+.apmapi.loadAPI p {
+    margin: 0 0 15px;
+}
+.apmapi.loadAPI a:link, .apmapi.loadAPI a:visited {
+    color: #3F658B;
+}
+.apmapi.loadAPI h1, .apmapi.loadAPI h2, .apmapi.loadAPI h3, .apmapi.loadAPI h4, .apmapi.loadAPI h5, .apmapi.loadAPI h6 {
+    display: block;
+    font-weight: bold;
+    letter-spacing: 0;
+	background-image:none;
+}
+.apmapi.loadAPI h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+.apmapi.loadAPI h2 {
+    font-size: 1.5em;
+    margin: 0em 0;
+}
+.apmapi.loadAPI h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+.apmapi.loadAPI h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+.apmapi.loadAPI h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+.apmapi.loadAPI h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
+.apmapi.loadAPI input, .apmapi.loadAPI select {
+    border: 1px solid #A7A6AA;
+    margin: 0;
+    padding: 1px 3px;
+}
+.apmapi.loadAPI input[type="radio"], .apmapi.loadAPI input[type="checkbox"] {
+    border: 0 none;
+    margin: 0 3px 0 5px;
+    padding: 0;
+}
+.apmapi.loadAPI select {
+    padding: 0;
+}
+.apmcon.gRwrap {
+    background: none repeat scroll 0 0 #Ffffff;
+	font-family: arial,helvetica,sans-serif;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.apmcon.gRbot {
+	display: block;
+}
+.apmcon.apmpb, .apmcon.apmtos, .apmcon.apmtos  a:link{
+    font-size: 10px;
+	font-family: Arial, sans-serif;
+}
+.apmcon.apmpb {
+    bottom: 0;
+    color: #103F5D;
+    line-height: 25px;
+    padding-top: 5px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+.apmcon.apmpb img {
+    margin: 1px 22px 0 3px;
+	width: 100px;
+}
+.apmcon.apmtos {
+    line-height: 35px;
+    position: relative;
+	margin: 0 0 0 30px;
+	text-align: left;
+}
+.apmout.gSB {
+    background: none repeat scroll 0 0 #ffffff;
+    position: relative;
+}
+.apmout.gB.gBTop {
+    font-size: 14px;
+    left: 0%;
+    margin-left: 0px;
+    position: relative;
+    text-align: center;
+    top: 0px;
+}
+.apmout.gB.gBTop ~ .gBTop {
+    left: 0%;
+    margin-left: 256px;
+    position: absolute;
+	top: 45px;
+}
+.apmout.gB.gBTop ~ .gBTop ~ .gBTop {
+    left: 0%;
+    margin-left: 520px;
+}
+.apmout.gB.gBTop ~ .gBTop ~ .gBTop ~ .gB {
+    margin-top: 0px;
+}
+.apmout.gB.gBTop ~ .gBTop ~ .gBTop ~ .gB ~ .gB {
+    margin: 0;
+}
+.apmout.gB.gBTop .gBwrap {
+    width: 235px;
+}
+.apmout.gB.gBTop .gBtop {
+    
+    height: 65px;
+}
+.apmout.gB.gBTop .gBbod {
+    text-align: center;
+    height: 100px;
+}
+.apmout.gB.gBTop .gBbot {
+   
+    height: 41px;
+}
+.apmout.gB.gBTop .apmapi.gBbizlogo {
+    left: 45px;
+    top: -53px;
+}
+.apmout.gB.gBTop .apmapifmbutton, .apmout.gB.gBTop .gBbizdesc, .apmout.gB.gBTop .gBbizname {
+    margin: 0;
+}
+.apmout.gB.gBTop .apmapifmbutton, .apmcon.gGR.level1 .apmapi.apmapifmbutton, .apmcon.gGR.level2 .apmapi.apmapifmbutton, .apmcon.gGR.level3 .apmapi.apmapifmbutton {
+    font-size: 0.8em;
+    margin: 0;
+}
+.apmout.gB.gBTop .gBbizname, .apmcon.gGR.level1 .apmapi.gBbizname, .apmcon.gGR.level2 .apmapi.gBbizname, .apmcon.gGR.level3 .apmapi.gBbizname {
+    color: #3F658B;
+    font-size: 0.9em;
+	line-height: 1.5em;
+}
+.apmout.gB.gBTop .gBbizdesc, .apmcon.gGR.level1 .apmcon.gBbizdesc, .apmcon.gGR.level2 .apmcon.gBbizdesc, .apmcon.gGR.level3 .apmcon.gBbizdesc {
+    color: #949494;
+    font-size: 0.8em;
+    margin: 5px 0;
+}
+.apmout.gB.gBTop .apmapi.apmapifributton {
+    left: 17px;
+    top: 135px;
+}
+.apmout.gSB .apmcon.gSBhead, .apmout.gSB .apmcon.gGRhead, .apmout.gSB .apmcon.gGRheadadd, .apmcon.gSBhead a:hover, .apmcon.gSBhead a:link{
+    color: #3F658B;
+    font: bold 16px/20px arial,verdana,sans-serif;
+    margin: 0;
+    padding: 10px 0 15px 0;
+    text-align: center;
+	background-image: none;
+}
+.apmcon.gGR.level2, .apmcon.gGR.level3, .apmcon.gGR.level2 H2, .apmcon.gGR.level3 H2 {
+    position: absolute;
+    left: 259px;
+    top: 50px;
+	background-image: none;
+}
+.apmcon.gGR.level1 {
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    width: 756px;
+}
+.apmcon.gGR.level1:after {
+    content: "";
+    display: block;
+    height: 3px;
+    margin-bottom: 6px;
+}
+.apmcon.gGR.level2 {
+    margin-right: -149px;
+}
+.apmcon.gGR.level3 {
+    margin-left: 257px;
+}
+.apmcon.gGR.level1 .apmout.gBgr {
+    width: 756px;
+}
+.apmcon.gGR.level2 .apmout.gBgr, .apmcon.gGR.level3 .apmout.gBgr {
+    width: 245px;
+}
+.apmcon.gGR.level1 h2 {
+    background-image: url("http://www.allpropertymanagement.com/images/prem-heads_test_g.png");
+    height: 31px;
+	background-size: 758px;
+}
+.apmcon.gGR.level1 h2, .apmcon.gGR.level2 h2, .apmcon.gGR.level3 h2 {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+	position: static;
+	text-align: center;
+}
+.apmcon.gGR.level1 h2 {
+    margin: 0 0 -6px 0;
+	padding: 0 0 0 27px;
+	text-align: left;
+	line-height: 27px;
+   
+}
+.apmcon.gGR.level2 h2 {
+    margin: 0 0 0px 0;
+    padding: 0 0 0 0;
+	line-height: 35px;
+    
+}
+.apmcon.gGR.level3 h2 {
+    margin: 0 0 0px 0;
+    padding: 0 0 0 0;
+	line-height: 35px;
+    
+}
+.apmcon.gBwrap {
+    margin: 0 0 15px 0;
+    padding: 5px 0;
+    width: 756px;
+	border: 1px solid #E3E3E3;
+	text-align:left;
+}
+.apmcon.gGR.level1 .apmcon.gBwrap, .apmcon.gGR.level2 .apmcon.gBwrap, .apmcon.gGR.level3 .apmcon.gBwrap {
+    font-size: 14px;
+    padding: 7.5px 0;
+    text-align: center;
+    width: 242px;
+}
+.apmcon.gBtop {
+    height: 11px;
+    position: relative;
+}
+.apmcon.gGR.level1 .apmcon.gBtop {
+    height: 53px;
+}
+.apmcon.gGR.level2 .apmcon.gBtop, .apmcon.gGR.level3 .apmcon.gBtop {
+    background: none repeat scroll 0 0 transparent;
+    height: 53px;
+}
+.apmcon.gBbot {
+   height: 15px;
+    position: relative;
+}
+.apmcon.gGR.level1 .apmcon.gBbot {
+     height: 40px;
+}
+.apmcon.gGR.level2 .apmcon.gBbot, .apmcon.gGR.level3 .apmcon.gBbot {
+    background: none repeat scroll 0 0 transparent;
+    height: 40px;
+}
+.apmcon.gBbod {
+    font-family: arial,verdana,sans-serif;
+    line-height: 1;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+}
+.apmcon.gGR.level1 .apmcon.gBbod {
+    height: 100px;
+    padding: 8px 10px 5px 10px;
+}
+.apmcon.gGR.level2 .apmcon.gBbod, .apmcon.gGR.level3 .apmcon.gBbod {
+    background: none repeat scroll 0 0 transparent;
+    height: 100px;
+    padding: 8px 35px 5px;
+}
+.apmapi.apmapifmbutton {
+    font-weight: bold;
+}
+.apmapi.apmapifmbutton, .apmcon.gBmanaging, .apmcon.gBbizdesc, .apmapi.gBbizname {
+    font-size: 0.7em;
+    margin: 5px 110px 3px 180px;
+}
+.apmapi.gBbizlogo {
+    float: left;
+    margin: 0px 0 0;
+    position: absolute;
+    top: 20%;
+}
+.apmapi.gBbizlogo img {
+    height: 50px;
+    width: 150px;
+}
+.apmcon.gGR.level1 .apmapi.gBbizlogo, .apmcon.gGR.level2 .apmapi.gBbizlogo, .apmcon.gGR.level3 .apmapi.gBbizlogo {
+    left: 45px;
+    top: -53px;
+}
+.apmcon.gBmanaging {
+    font-size: 0.6em;
+    font-weight: bold;
+}
+.apmapi.gBbizname {
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.apmapi.apmapifributton {
+    background-image: url("http://www.allpropertymanagement.com/images/free-instant-quote.png");
+    display: block;
+    height: 29px;
+    left: 50%;
+    margin: 24px 0 0 0px;
+    position: absolute;
+    text-indent: -9999px;
+    width: 168px;
+}
+.apmcon.gBbod .apmapi.apmapifributton, .apmapi.apmapitybutton, .apmout.gB ~ .apmapi.apmapifrisubbutton {
+    background-image: url("http://www.allpropertymanagement.com/images/free-quote.png");
+    border: 0 none;
+    height: 29px;
+    width: 100px;
+}
+.apmcon.gBbod .apmapi.apmapifributton {
+    left: auto;
+    margin: -14.5px auto;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+.apmcon.gGR.level1 .apmapi.apmapifributton, .apmcon.gGR.level2 .apmapi.apmapifributton, .apmcon.gGR.level3 .apmapi.apmapifributton {
+    left: 80px;
+    right: auto;
+    top: 128px;
+}
+.apmout.apmFP {
+    background: none repeat scroll 0 0 #FFFFFF;
+    overflow: hidden;
+}
+.apmcon.gFPwrap {
+    margin: 0 0 40px auto;
+    padding: 0 20px 45px 0;
+    width: 440px;
+	text-align: left;
+}
+.apmcon.gFPwrap:before {
+    content: "";
+    float: right;
+    height: 830px;
+}
+.apmcon.FPProplogo {
+    margin: 0 0 15px;
+}
+.apmcon.FPPropbizinfo, .apmout.gPTPM {
+    left: 10px;
+    position: absolute;
+    width: 250px;
+}
+.apmcon.FPPropbizinfo {
+    font: normal 9px arial,helvetica,sans-serif;
+    line-height: 1.5;
+    top: 550px;
+	
+}
+.apmcon.FPPropname {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 11px;
+    margin-bottom: 5px;
+    width: 260px;
+}
+.apmcon.FPPropaddress1 {
+    margin-left: 20px;
+}
+.apmcon.FPPropaddress2:after {
+    content: "\A ";
+    white-space: pre;
+}
+.apmcon.FPProplistingCity {
+    margin-left: 20px;
+}
+.apmcon.FPProplistingState {
+    margin-left: 20px;
+}
+.apmcon.FPProplistingCity + .FPProplistingState {
+    margin-left: 0;
+}
+.apmcon.FPProplistingState:after {
+    content: " ";
+}
+.apmcon.FPPropfeaturedtxt {
+    color: #000000;
+    font: 11px arial,verdana,san-serif;
+}
+.apmcon.FPPropfeaturedtxt ol, .apmcon.FPPropfeaturedtxt ul {
+    display: block;
+    list-style-type: disc;
+    margin: 1em 0;
+    padding-left: 20px;
+	
+}
+.apmcon.FPPropfeaturedtxt img[align="left"] {
+    float: left;
+}
+.apmcon.FPPropfeaturedtxt img[align="right"] {
+    float: right;
+}
+.apmout.gPTPM {
+    font-size: 10px;
+    top: 608px;
+	
+}
+.apmout.gPTPM UL{
+    font: normal 10px arial,helvetica,sans-serif;
+    margin: 0 0 0 -17px;
+}
+.apmout.gPTPM ul:before {
+    content: "Managing:";
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0 -20px 5px;
+}
+.apmout.gPTPM li {
+    list-style: none outside none;
+}
+.apmout.apmapirfi, .apmreprocess {
+    background: none;
+    font-size: 0.75em;
+    line-height: 2;
+    padding: 16px 0;
+	border: 1px solid #c3c3c3;
+	margin: 0 0 18px 0;
+}
+.apmout.apmapirfi.apmapifprfi {
+    background: none repeat scroll 0 0 #1A4773;
+    color: #DFDFDF;
+    left: 0px;
+    line-height: 1;
+    padding: 0 16px 16px;
+    position: absolute;
+    top: 0;
+    width: 246px;
+}
+.apmcon.apmrfiactcall {
+    display: none;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfiactcall {
+    background: url("http://www.allpropertymanagement.com/images/get-free-instant-quote_new.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 74px;
+    margin-left: -16px;
+    width: 278px;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfiactcall h6 {
+    color: #DFDFDF;
+    font-family: Trebuchet MS;
+    left: 179px;
+    position: absolute;
+    top: 56px;
+}
+.apmcon.apmrfibiz {
+    text-align: center;
+}
+.apmcon.apmrfinote {
+    font-style: italic;
+}
+.apmcon.apmrfiactcall h2 {
+    display: none;
+}
+.apmcon.apmrfibname {
+    font-weight: bold;
+}
+.apmcon.apmrfinote {
+    margin-bottom: 15px;
+}
+.apmcon.apmrfiprop, .apmcon.apmrficontact {
+    margin: 0 auto;
+    padding-right: 250px;
+    white-space: nowrap;
+    width: 460px;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfiprop, .apmout.apmapirfi.apmapifprfi .apmrficontact {
+    padding: 0;
+    position: relative;
+    width: 246px;
+}
+.apmout.gFMEl {
+    clear: left;
+    float: left;
+}
+.apmout.apmapirfi.apmapifprfi .gFMEl {
+    float: none;
+}
+.apmout.apmapirfi label {
+    display: inline-block;
+    margin-right: 15px;
+    text-align: right;
+    width: 280px;
+}
+.apmout.apmapirfi.apmapifprfi label {
+    display: inline;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 2;
+    position: relative;
+    right: 0;
+    text-align: left;
+    top: 3px;
+}
+.apmout.apmapirfi select {
+    font-size: 1em;
+    max-width: 300px;
+    width: 300px;
+}
+.apmout.apmapirfi.apmapifprfi select {
+    display: block;
+    float: none;
+    font-size: 11px;
+    width: 246px;
+}
+.apmout.apmapirfi input {
+    font-size: 1em;
+    max-width: 292px;
+    width: 292px;
+}
+.apmout.apmapirfi.apmapifprfi input {
+    display: block;
+    font-size: 11px;
+    width: 238px;
+}
+.apmapi.onload {
+    display: none;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfici .data {
+    margin-right: 6px;
+    width: 139px;
+}
+.apmout.apmapirfi.apmapifprfi .gFMST {
+    bottom: 40px;
+    left: 152px;
+    position: absolute;
+}
+.apmout.gFMST .data {
+    width: 7em;
+}
+.apmout.apmapirfi.apmapifprfi .gFMST .data {
+    margin-right: 6px;
+    width: 47px;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfizip {
+    bottom: 40px;
+    left: 206px;
+    position: absolute;
+}
+.apmout.apmrfizip .data {
+    width: 3em;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfizip .data {
+    width: 32px;
+}
+.apmout.apmapirfi .apmrficv {
+    position: relative;
+    width: 246px;
+}
+.apmout.apmapirfi.apmapifprfi .apmrficv {
+    font-size: 11px;
+}
+.apmout.apmapirfi.apmapifprfi .apmrficv label, .apmout.apmapirfi.apmapifprfi .apmrficom label {
+    display: block;
+}
+.apmout.apmapirfi.apmapifprfi .apmrficv {
+    line-height: 20px;
+}
+.apmout.apmapirfi .apmrficv .data {
+    border: 0 none;
+    display: inline;
+    float: none;
+    margin: 0 3px 0 0;
+    position: relative;
+    top: 2px;
+    width: 13px;
+}
+.apmout.apmapirfi .apmrficv .data ~ .data {
+    margin-left: 5px;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfifname .data {
+    margin-right: 6px;
+    width: 112px;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfilname {
+    left: 126px;
+    position: absolute;
+    top: 44px;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfilname .data {
+    width: 112px;
+}
+.apmout.apmapirfi .apmrficonhead {
+    clear: both;
+    padding-top: 1.5em;
+    text-align: right;
+    width: 286px;
+}
+.apmout.apmapirfi.apmapifprfi .apmrficonhead {
+    clear: none;
+    color: #EEEEEE;
+    font-size: 12px;
+    margin: 0;
+    padding: 30px 0 0;
+    text-align: left;
+    width: auto;
+}
+.apmout.apmrfiphone {
+    position: relative;
+    right: 5px;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfiphone {
+    width: 137px;
+}
+.apmout.apmrfiphone label {
+    left: 5px;
+    right: 310px;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfiphone label {
+    display: block;
+    left: 5px;
+    margin: 0;
+    top: 3px;
+}
+.apmout.apmapirfi .apmrfiphone .data {
+    float: none;
+    margin: 0 1px;
+    width: 1.8em;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfiphone .data {
+    display: inline;
+    vertical-align: middle;
+    width: 27px;
+}
+.apmout.apmapirfi .apmrfiphone .apmrfip3 {
+    width: 2.4em;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfiphone .apmrfip3 {
+    margin-right: 6px;
+    width: 36px;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfibc {
+    height: 38px;
+    left: 132px;
+    position: absolute;
+    top: 82px;
+}
+.apmout.apmrfibc .data {
+    width: 6em;
+}
+.apmout.apmapirfi.apmapifprfi .apmrfibc .data {
+    margin-right: -5px;
+    width: 114px;
+}
+.apmout.apmapirfi textarea {
+    display: inline-block;
+    margin-top: 2px;
+    max-width: 294px;
+    min-width: 294px;
+    vertical-align: top;
+}
+.apmout.apmapirfi.apmapifprfi textarea {
+    margin: 0;
+    max-height: 60px;
+    max-width: 240px;
+    min-height: 60px;
+    min-width: 240px;
+}
+.apmapifrisubbutton {
+    background: url("http://www.allpropertymanagement.com/images/request-my-free-quote.png") repeat scroll 0 0 transparent;
+    border: 0 none;
+    display: block;
+    height: 36px;
+    margin: 10px auto 0;
+    text-indent: -9999px;
+    width: 246px;
+}
+.apmout.gB ~ .apmapifrisubbutton, .apmapi.apmapitybutton {
+    display: inline;
+    margin: 5px 0 30px 623px;
+    text-indent: -9999px;
+}
+.apmcon.gTYP, .apmcon.apmrfifilter, .apmcon.apmreprocessdone {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none;
+    border-color: #E3E3E3;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 0.75em;
+    margin: 0 auto 15px;
+    padding: 15px 17px;
+    text-align: left;
+    
+}
+.apmcon.gTYP p {
+    line-height: 2;
+    margin: 0;
+}
+.apmapi.apmapifmcheck, .apmapi.apmapifmradio {
+    float: right;
+    margin-top: -10px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+.apmcon.apmrfiTYPtop {
+    color: #3F658B;
+    font: bold 1.2em arial,verdana,sans-serif;
+    padding: 0px 0 7px;
+}
+.apmout.lPR {
+    margin: 0 auto;
+}
+.apmcon.apmrfiTYPbot {
+    font-weight: bold;
+}
+.apmcon.apmrfifilter {
+    padding: 50px 17px;
+}
+.apmcon.apmrfifilter .apmcon.apmrfifilter {
+    border: 0 none;
+    font-size: 1em;
+    font-style: italic;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+}
+.apmout.apmreprocess {
+    line-height: 1.5;
+    text-align: center;
+}
+.apmout.apmrficom {
+    float: none;
+    width: auto;
+}
+.apmout.apmreprocess p {
+    font-style: italic;
+}
+.apmout.apmreprocess textarea {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 500px;
+}
+.apmapi.apmlrPRbutton {
+    display: block;
+    margin-top: 16px;
+}
+.apmcon.apmreprocessdone {
+    border-bottom: 0 none;
+    font-size: 1em;
+}
+.apmcon.apmreprocessdone p {
+    font-weight: bold;
+    margin: 50px 0;
+}
